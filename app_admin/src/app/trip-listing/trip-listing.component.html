@@ -1,6 +1,6 @@
 <!-- Note: Angular using double curly braces like Handlebars -->
 <!-- <pre>{{trips | json}}</pre> -->
-<div>
+<div *ngIf="isLoggedIn()"> <!--only displays button if logged in-->
     <button (click)="addTrip()" class="btn btn-info">Add Trip</button>
 </div>
 <div class="row">
